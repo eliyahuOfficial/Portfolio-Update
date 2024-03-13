@@ -1,0 +1,37 @@
+.content {
+    padding-bottom: 40px;
+}
+
+
+section {
+    width: 30vw;
+    height: 70vh;
+    background-color: #1A1A1AD4;
+    opacity: 1;
+    text-align: right;
+    position: absolute;
+    top: 120px;
+    right: 295px;
+    padding: 80px 80px;
+
+    h2 {
+        font-size: 36px;
+        font-family: 'Heebo', sans-serif;
+        color: aliceblue;
+        font-weight: 900;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font: 20px 'Heebo', sans-serif;
+        color: #fff;
+    }
+}
+
+.img {
+    width: 100vw;
+    height: 50vh;
+    background-image: url('./projectThree.png');
+    position: relative;
+    top: 0;
+}

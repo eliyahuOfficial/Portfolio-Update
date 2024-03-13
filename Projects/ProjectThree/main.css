@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  padding-bottom: 40px;
+}
+
+section {
+  width: 30vw;
+  height: 70vh;
+  background-color: rgba(26, 26, 26, 0.831372549);
+  opacity: 1;
+  text-align: right;
+  position: absolute;
+  top: 120px;
+  right: 295px;
+  padding: 80px 80px;
+}
+section h2 {
+  font-size: 36px;
+  font-family: "Heebo", sans-serif;
+  color: aliceblue;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+section p {
+  font: 20px "Heebo", sans-serif;
+  color: #fff;
+}
+
+.img {
+  width: 100vw;
+  height: 50vh;
+  background-image: url("./projectThree.png");
+  position: relative;
+  top: 0;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #D31C75;
+  opacity: 2;
+}
+
+label {
+  font: 1em "Heebo", sans-serif;
+  color: #fff;
+}
+
+.button {
+  border: none;
+  color: white;
+  font-family: "Heebo", sans-serif;
+  padding: 12px 64px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button.button1 {
+  background-color: #D31C75;
+  color: rgb(255, 255, 255);
+  margin-top: 20px;
+}
+.button.button1:hover {
+  background-color: #63505f;
+  color: white;
+}
+
+@media screen and (max-width: 1200px) {
+  .img {
+    width: 100vw;
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-size: 100vw 20vh;
+  }
+  section {
+    top: 89px;
+    left: 37px;
+    width: 80vw;
+    height: 50vh;
+    padding: 40px;
+  }
+  section h2 {
+    font-size: 2em;
+    text-align: center;
+  }
+  section p {
+    font-size: 1em;
+    text-align: center;
+  }
+  .content {
+    padding: 0;
+  }
+  label {
+    font-size: 0.9em;
+  }
+  input[type=text] {
+    padding: 5px 5px;
+  }
+  .button1 {
+    margin-top: 12px;
+  }
+  .button {
+    padding: 6px 20px;
+  }
+}/*# sourceMappingURL=main.css.map */

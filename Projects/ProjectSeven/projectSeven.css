@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+}
+
+.blue {
+    background-color: #0EE1E1;
+}
+
+.azure {
+    background-color: #F0FFFF;
+}
+
+#content h1 {
+    text-align: right;
+    font-family: 'Heebo';
+    font-weight: 900;
+
+}
+
+.headContact {
+    text-align: start;
+}
+
+.headContact h2 {
+    font-weight: 700;
+    font-family: 'Heebo';
+
+}
+
+.headContact p {
+    font-family: 'heebo';
+}
+
+#contact {
+    direction: rtl;
+    padding: 80px;
+}
+
+#map img {
+    width: inherit;
+
+}
+
+#map {
+    border: 80px solid #0EE1E1;
+    padding: 0;
+}
+
+form {
+    text-align: right;
+}
+
+input.form-control {
+    background-color: #E5EEFF;
+    border-bottom: 5px solid #0EE1E1;
+    border-radius: 0;
+}
+
+input#text {
+    height: 20vh;
+}
+
+label {
+    color: #000000;
+    font-family: 'heebo';
+    font-weight: 700;
+}
+
+.button button {
+    margin-top: 20px;
+    background-color: #0EE1E1;
+    border-radius: 0;
+    border: none;
+    color: #000000;
+    font-family: 'heebo';
+    font-weight: 700;
+}
+
+button {
+    width: 100%;
+}
+
+.content h2 {
+    color: #0EE1E1;
+    font-family: 'Heebo';
+    font-weight: 900;
+}
+
+.content p {
+    font-size: 0.84em;
+    font-family: 'Heebo';
+    font-weight: 400;
+}
+
+#content p {
+    text-align: start;
+}
+
+#whatsapp {
+    padding: 2em;
+}
+
+.bgcWhatsapp {
+    background-color: #ffffff;
+    background-size: auto;
+    width: 120px;
+    border-radius: 80px;
+    margin: 20px;
+}
+
+#row2 {
+    direction: rtl;
+    height: 40vh;
+    margin-bottom: 20px;
+}
+
+#row4 {
+    flex-wrap: nowrap;
+}
+
+.square {
+    background-color: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+    text-align: center;
+    border: 20px solid white;
+    height: 40vh;
+}
+
+.square img {
+    width: 100px;
+    height: 80px;
+}
+
+.content {
+    width: 60%;
+}
+
+.social-link img {
+    width: 60px;
+}
+
+.social-link {
+    background: #0EE1E1;
+    border-radius: 50px;
+    padding: 20px;
+    margin: 40px 0px 40px 0px;
+}
+
+#social {
+    display: flex;
+    justify-content: space-around;
+}
+
+#bottomLine {
+    height: 20px;
+
+}
+
+#line-container {
+    padding: 0;
+}
+
+form>.name,
+form>.email,
+form>.text,
+form>.button {
+    padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .boxPic {
+        width: 100px;
+        display: flex;
+        margin-top: 10vw
+    }
+
+    #whatsapp {
+        display: none;
+    }
+
+    #row4 {
+        flex-wrap: wrap;
+    }
+
+    .social-link img {
+        width: 30px;
+    }
+
+    #map {
+        border: 15px solid #0EE1E1;
+    }
+}

@@ -1,0 +1,36 @@
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #D31C75;
+    opacity: 2;
+}
+
+label {
+    font: 1em 'Heebo', sans-serif;
+    color: #fff;
+}
+
+.button {
+    border: none;
+    color: white;
+    font-family: 'Heebo', sans-serif;
+    padding: 12px 64px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+    &.button1 {
+        background-color: #D31C75;
+        color: rgb(255, 255, 255);
+        margin-top: 20px;
+
+        &:hover {
+            background-color: #63505f;
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+@media screen and (max-width:1200px) {
+    .img {
+        width: 100vw;
+        height: 30vh;
+        background-repeat: no-repeat;
+        background-size: 100vw 20vh;
+    }
+
+    section {
+        top: 89px;
+        left: 37px;
+        width: 80vw;
+        height: 50vh;
+        padding: 40px;
+
+        h2 {
+            font-size: 2em;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1em;
+            text-align: center;
+        }
+    }
+
+    .content {
+        padding: 0;
+    }
+
+    label {
+        font-size: 0.9em;
+    }
+
+    input[type=text] {
+        padding: 5px 5px;
+    }
+
+    .button1 {
+        margin-top: 12px;
+    }
+
+    .button {
+        padding: 6px 20px;
+    }
+}
