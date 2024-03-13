@@ -2,7 +2,7 @@ $(document).ready(function () {
     if ($('.typedn').length) {
         var typedn = new Typed('.typedn', {
 
-            strings: ["Versatile full-stack web developer and music producer ... "],
+            strings: ["Versatile full-stack web developer ... "],
             loop: true,
             typeSpeed: 100,
             backSpeed: 50,
