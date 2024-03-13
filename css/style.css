@@ -1,0 +1,641 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;800;900&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+:root {
+    --bg-color: linear-gradient(to bottom, rgba(122, 122, 122, 0.3) 15%, rgba(97, 97, 97, 0.7) 85%, #030303 100%);
+    --second-bg-color: #cac6c6;
+    --two-color: #b5a168;
+    --contact-color: #fff1f1;
+    --text-color: #2a2a2a;
+    --second-color: #202020;
+    --second-main-color: rgb(128, 131, 133);
+    --main-color: linear-gradient(to bottom, rgba(214, 205, 205, 0.3) 15%, rgba(121, 121, 121, 0.7)) 85%, #a3a3a3;
+    --btn-color: linear-gradient(to bottom, rgba(233, 232, 191, 0.3) 15%, #b5a168 85%, #a09064);
+    --big-font: 7rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+}
+
+/* --------------------------Eliyahu Levi Portfolio Project Html Css------------------ */
+/* --------------------------Hope you will Like it :)---------------------- */
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+
+header ul {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: linear-gradient(to bottom, rgba(216, 215, 215, 0.3) 15%, rgba(141, 140, 140, 0.7) 85%, #030303 100%);
+    padding: 20px 15%;
+    border-bottom: 1px solid transparent;
+    transition: all .45s ease;
+    box-shadow: 3px 3px 35px #202020;
+}
+
+
+/* .topIcon {
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/color-solid.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1.5rem;
+    border-radius: 50%;
+    animation: rotate 7s linear infinite;
+    opacity: 0.3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    padding: 2px 16% 4rem;
+    z-index: 1000;
+
+
+}
+
+
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+} */
+
+
+
+
+span {
+    color: var(--two-color);
+}
+
+.navlist {
+    display: flex;
+}
+
+.navlist a {
+    color: var(--second-color);
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 10px;
+    transition: all .45s ease;
+}
+
+.navlist a:hover {
+    color: var(--two-color);
+    border-bottom: 2px solid var(--two-color);
+}
+
+.navlist a.active {
+    color: var(--main-color);
+
+
+}
+
+section {
+    padding: 0px 15% 120px;
+
+}
+
+.onlyforprojects {
+    margin-top: 6rem;
+}
+
+.home {
+
+
+    position: relative;
+    width: 90%;
+    background-image: url(../img/newmasterback.png);
+    background-size: 80%;
+    background-position: right;
+    margin-top: 6rem;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+
+
+
+.slide {
+    margin: 20px 0;
+
+
+}
+
+.one {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 0 15px;
+    line-height: 32px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: var(--main-color);
+    color: var(--text-color);
+}
+
+.two {
+    display: inline-block;
+    color: var(--second-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.home-text h1 {
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 0 0 35px;
+    padding-bottom: 40px;
+    font-size: var(--big-font);
+    color: rgba(225, 225, 225, .01);
+    background-image: url(../img/master.jpg);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: animate 15s ease-in-out infinite;
+}
+
+
+
+
+
+@keyframes animate {
+
+    0%,
+    100% {
+        background-position: left top;
+    }
+
+    25% {
+        background-position: right bottom;
+    }
+
+    50% {
+        background-position: left bottom;
+    }
+
+    75% {
+        background-position: right top;
+    }
+}
+
+
+
+
+
+
+p {
+    animation: fadeIn 5s ease-in-out
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.home.text h3 {
+    color: var(--text-color);
+    margin: 0 0 15px;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.home-text p {
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.icon-about {
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+.container-audio {
+    margin-top: 3rem;
+
+}
+
+audio {
+    box-shadow: 3px 3px 15px #505050;
+    border-radius: 4rem;
+    margin-right: 1.5rem;
+    width: 24rem;
+
+
+
+}
+
+
+hr {
+    width: 24rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+.button {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px;
+    background: var(--btn-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: all .45s ease;
+    margin-right: 1rem;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    transition: scale(0.9);
+    color: var(--second-main-color);
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+    gap: 1.5rem;
+}
+
+.about-img img {
+    max-width: 530px;
+    height: auto;
+    width: 100%;
+    border-radius: 5px;
+
+}
+
+.about-text h2 {
+    font-size: var(--h2-font);
+    line-height: 1;
+
+}
+
+.typeabout {
+    padding: 1rem 0;
+}
+
+
+.paraabout {
+    display: flex;
+
+}
+
+.loader {
+    width: 50px;
+    height: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.loader:before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 20px;
+    top: 0;
+    border: 5px solid #0000;
+    border-color: #c7af82 #b6b5b5 #0000 #0000;
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: rotate 3s ease-in-out infinite;
+    transform: rotate(-200deg);
+}
+
+@keyframes rotate {
+    0% {
+        border-width: 10px;
+    }
+
+    25% {
+        border-width: 3px;
+    }
+
+    50% {
+        transform: rotate(115deg);
+        border-width: 10px;
+    }
+
+    75% {
+        border-width: 3px;
+    }
+
+    100% {
+        border-width: 10px;
+    }
+}
+
+
+
+
+
+
+.about-text h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    line-height: 1.7;
+    margin: 15px 0 38px;
+}
+
+.about-text p {
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 1.8;
+    margin-bottom: 4rem;
+}
+
+.projects-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    align-items: center;
+    margin-top: 5rem;
+    gap: 4rem;
+
+}
+
+.row>img {
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 1px 2px 25px gray;
+    display: block;
+    transition: transform 0.5s;
+    margin-bottom: 15px;
+    border: 2px solid rgb(163, 163, 163);
+}
+
+
+
+div>a>img {
+    width: 30px;
+
+}
+
+.main-text h2 {
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+
+.typedgames,
+.typedprojects {
+    color: black;
+}
+
+
+
+.layer h5 {
+    font: 20px;
+    font-weight: 600;
+
+}
+
+.layer p {
+    color: var(--second-color);
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.row:hover>img {
+    transform: scale(0.8);
+
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.contact-text h4 {
+    color: var(--contact-color);
+    margin: 18px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contact-text h2 {
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+
+
+.contact-text p {
+    color: var(--contact-color);
+    font-size: var(--p-font);
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.list {
+    margin-bottom: 2.8rem;
+}
+
+.list li {
+    margin-bottom: 12px;
+}
+
+.list li a {
+    display: block;
+    color: var(--second-bg-color);
+    font-size: 14px;
+    transition: all .45s ease;
+}
+
+.list li a:hover {
+    color: var(--second-main-color);
+    transform: translateY(5px);
+
+}
+
+.contact-icons img {
+    height: 35px;
+    width: 35px;
+    background: var(--btn-color);
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-right: 15px;
+    transition: all .45s ease;
+
+}
+
+.contact-icons img:hover {
+    background: var(--text-color);
+}
+
+.contact-form form {
+    position: relative;
+}
+
+.contact-form form input,
+form textarea {
+    width: 100%;
+    padding: 14px;
+    background: var(--second-bg-color);
+    color: var(--bg-color);
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 240px;
+}
+
+.contact-form .submit {
+    display: inline-block;
+    font-size: 16px;
+    width: 160px;
+    background: var(--btn-color);
+}
+
+.contact-form .submit:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+::placeholder {
+    color: var(--two-color);
+}
+
+.end {
+    padding: 20px 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    gap: 2rem;
+}
+
+.last-text p {
+    color: var(--contact-color);
+    font-size: 14px;
+}
+
+.top img {
+    height: 45px;
+    width: 45px;
+    padding: 10px;
+    border-radius: 15px;
+
+    background: var(--btn-color);
+
+}
+
+@media screen and (max-width: 1480px) {
+    .topIcon {
+        padding: 12px 5%;
+        transition: .1s;
+    }
+
+    section {
+        padding: 0 3% 68px;
+
+    }
+
+    .end {
+        padding: 15px 3%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    :root {
+        --max-font: 5rem;
+        --big-font: 4rem;
+        --h2-font: 2.5rem;
+        --p-font: 1rem;
+        transition: .1s;
+    }
+
+
+
+}
+
+@media screen and (max-width:920px) {
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .about-img img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+
+    }
+
+    .home {
+        background-image: none;
+    }
+
+    header>p {
+        display: none;
+    }
+
+
+}
+
+
+@media screen and (max-width:480px) {
+    .contact {
+
+        grid-template-columns: none;
+        align-items: normal;
+    }
+
+
+
+
+}
