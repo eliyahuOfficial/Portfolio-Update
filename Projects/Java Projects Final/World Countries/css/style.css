@@ -216,7 +216,7 @@ main #country .card>.img {
 
 main #country .card>.img img {
     width: 100%;
-    height: 100%;
+    height: 90%;
     object-fit: cover;
     margin-top: 3rem;
     box-shadow: 1px 3px 35px black;
@@ -351,6 +351,18 @@ footer a {
         transform: rotate(360deg);
     }
 }
+
+
+@media only screen and (max-width: 1080px) {
+
+
+    main #country .card>.img img {
+        width: 100%;
+        height: 70%;
+
+    }
+}
+
 
 
 @media only screen and (max-width: 660px) {
