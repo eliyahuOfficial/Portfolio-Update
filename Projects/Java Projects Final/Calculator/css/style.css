@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;800;900&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+:root {
+    --bg-color: linear-gradient(to bottom, rgba(165, 162, 162, 0.3) 15%, rgba(121, 121, 121, 0.7) 85%, #030303 100%);
+    --second-bg-color: #cac6c6;
+    --two-color: #b5a168;
+    --contact-color: #fff1f1;
+    --text-color: #2a2a2a;
+    --second-color: #202020;
+    --second-main-color: rgb(128, 131, 133);
+    --main-color: linear-gradient(to bottom, rgba(214, 205, 205, 0.3) 15%, rgba(121, 121, 121, 0.7)) 85%, #a3a3a3;
+    --btn-color: linear-gradient(to bottom, rgba(233, 232, 191, 0.3) 15%, #b5a168 85%, #a09064);
+    --big-font: 4rem;
+    --h2-font: 3rem;
+    --p-font: 1rem;
+}
+
+/*-------------General Css------------ */
+
+body {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    color: var(--text-color);
+    background-image: url(../img/master.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+    -webkit-animation: slidein 100s;
+    animation: slidein 100s;
+
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+
+@-webkit-keyframes slidein {
+    from {
+        background-position: top;
+        background-size: 5000px;
+    }
+
+    to {
+        background-position: -100px 0px;
+        background-size: 4750px;
+    }
+}
+
+@keyframes slidein {
+    from {
+        background-position: top;
+        background-size: 5000px;
+    }
+
+    to {
+        background-position: -100px 0px;
+        background-size: 4750px;
+    }
+
+}
+
+
+span {
+    color: var(--two-color);
+}
+
+section {
+    padding: 35px;
+}
+
+
+.home-text h1 {
+
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 25px 0 35px;
+    padding-bottom: 40px;
+    font-size: var(--big-font);
+    color: rgba(225, 225, 225, .01);
+    background-image: url(../img/master.jpg);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: animate 15s ease-in-out infinite;
+
+
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        background-position: left top;
+    }
+
+    25% {
+        background-position: right bottom;
+    }
+
+    50% {
+        background-position: left bottom;
+    }
+
+    75% {
+        background-position: right top;
+    }
+}
+
+
+.home-text h3 {
+    color: var(--text-color);
+    margin: 0 0 15px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.home-text p {
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 1.8;
+
+}
+
+
+
+/*-------------Calculator------------ */
+
+.calculator {
+    margin-top: 65px;
+    padding: 10px;
+    border-radius: 16px;
+    background-image: url(../img/master.jpg);
+    box-shadow: 3px 3px 15px rgba(113, 115, 119, 0.5);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+input {
+    width: 230px;
+    border: none;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 15px rgbs(84, 84, 84, 0.1);
+    font-size: 30px;
+    cursor: pointer;
+
+}
+
+input::placeholder {
+    color: var(--text-color);
+}
+
+.button {
+    border: none;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 50%;
+    color: --text-color;
+    font-size: 20px;
+    box-shadow: 2px 2px 35px black;
+    cursor: pointer;
+}
+
+.equalBtn {
+    background-color: var(--two-color);
+}
+
+.operator {
+    color: var(--btn-color);
+}

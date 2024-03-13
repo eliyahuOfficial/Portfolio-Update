@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Synth</title>
+    <link rel="icon" type="image/x-icon" href="./img/eliyahu-faicon.png" />
+    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+
+    <h1> <span>My </span>Synth</h1>
+
+    <ul id="keyboard">
+        <li note="C" class="white">C</li>
+        <li note="C#" class="black">C#</li>
+        <li note="D" class="white offset">D</li>
+        <li note="D#" class="black">D#</li>
+        <li note="E" class="white offset">E</li>
+        <li note="F" class="white">F</li>
+        <li note="F#" class="black">F#</li>
+        <li note="G" class="white offset">G</li>
+        <li note="G#" class="black">G#</li>
+        <li note="A" class="white offset">A</li>
+        <li note="A#" class="black">A#</li>
+        <li note="B" class="white offset">B</li>
+        <li note="C2" class="white">C</li>
+        <li note="C#2" class="black">C#</li>
+        <li note="D2" class="white offset">D</li>
+        <li note="D#2" class="black">D#</li>
+        <li note="E2" class="white offset">E</li>
+    </ul>
+
+
+    <div class="controls">
+        <h2>Filter</h2>
+        <label for="cutoff">Cutoff</label>
+        <input type="range" id="cutoff" min="0" max="1000" value="1000" step="100">
+
+        <label for="resonance">Resonance</label>
+        <input type="range" id="resonance" min="0" max="10" value="5" step="0.1">
+    </div>
+
+
+
+    <div id="envelope-options">
+        <h2>Envelope</h2>
+        <label for="attack-control">Attack Time</label><br>
+        <input type="range" id="attack-control" value="0.3" min="0" max="0.5" step="0.02"><br>
+        <label for="release-control">Release Time</label><br>
+        <input type="range" id="release-control" value="0.3" min="0" max="0.5" step="0.02"><br>
+        <label for="note-length-control">Note Length</label><br>
+        <input type="range" id="note-length-control" value="1" min="0.2" max="2" step="0.05"><br>
+    </div>
+
+
+
+
+    <label for="waveform-select">Select Sound:</label>
+    <select id="waveform-select" class="waveform-style">
+        <option value="sine">Sine</option>
+        <option value="square">Square</option>
+        <option value="sawtooth">Sawtooth</option>
+        <option value="triangle">Triangle</option>
+    </select>
+
+
+
+
+
+
+    <section class="end">
+        <div class="last-text">
+            <p>
+                Copyright © 2024 Eliyahu Levi. All Rights Reserved.
+            </p>
+        </div>
+
+    </section>
+
+    <div class="contact-icons">
+        <a href="https://www.facebook.com/eliyahuofficial/" target="_blank"><img src="./img/facebook-logo.png"
+                alt="Facebook"></a>
+        <a href="https://www.instagram.com/eliyahu_official_music/" target="_blank"><img src="./img/instagram-logo.png"
+                alt="Instagram"></a>
+        <a href="https://www.youtube.com/channel/UCHPgu0-u3ckYHlCURDqFW9A" target="_blank"><img
+                src="./img/youtube-logo.png" alt="Youtube"></a>
+        <a href="https://soundcloud.com/eliyahuofficialmusic" target="_blank"><img src="./img/soundcloud-logo.png"
+                alt="Soundcloud"></a>
+        <a href="https://open.spotify.com/artist/42Cgi8xQ1mM8ZizCeJZK46?si=xNL3iwuvScC3iB9Apc9IjA" target="_blank"><img
+                src="./img/spotify-logo.png" alt="Spotify"></a>
+    </div>
+
+
+
+</body>
+
+</html>

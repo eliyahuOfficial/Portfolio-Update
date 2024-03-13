@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;800;900&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+:root {
+    --bg-color: linear-gradient(to bottom, rgba(165, 162, 162, 0.3) 15%, rgba(121, 121, 121, 0.7) 85%, #030303 100%);
+    --second-bg-color: #cac6c6;
+    --two-color: #b5a168;
+    --contact-color: #fff1f1;
+    --text-color: #2a2a2a;
+    --second-color: #202020;
+    --second-main-color: rgb(128, 131, 133);
+    --main-color: linear-gradient(to bottom, rgba(214, 205, 205, 0.3) 15%, rgba(121, 121, 121, 0.7)) 85%, #a3a3a3;
+    --btn-color: linear-gradient(to bottom, rgba(233, 232, 191, 0.3) 15%, #b5a168 85%, #a09064);
+    --big-font: 4.5rem;
+    --h2-font: 3rem;
+    --h3-font: 2rem;
+    --p-font: 1.1rem;
+}
+
+body {
+
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/master.jpg);
+    -webkit-animation: slidein 100s;
+    animation: slidein 100s;
+
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+
+@-webkit-keyframes slidein {
+    from {
+        background-position: top;
+        background-size: 3000px;
+    }
+
+    to {
+        background-position: -100px 0px;
+        background-size: 2750px;
+    }
+}
+
+@keyframes slidein {
+    from {
+        background-position: top;
+        background-size: 3000px;
+    }
+
+    to {
+        background-position: -100px 0px;
+        background-size: 2750px;
+    }
+
+}
+
+h1 {
+
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 35px 0 35px;
+    padding-bottom: 40px;
+    font-size: var(--big-font);
+    color: rgba(225, 225, 225, .01);
+    background-image: url(../img/master.jpg);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: animate 15s ease-in-out infinite;
+    font-size: var(--big-font);
+
+
+}
+
+h3 {
+
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 0 0 35px;
+    padding-bottom: 40px;
+    font-size: var(--big-font);
+    color: rgba(225, 225, 225, .01);
+    background-image: url(../img/master.jpg);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: animate 15s ease-in-out infinite;
+    font-size: var(--h3-font);
+
+
+}
+
+
+
+@keyframes animate {
+
+    0%,
+    100% {
+        background-position: left top;
+    }
+
+    25% {
+        background-position: right bottom;
+    }
+
+    50% {
+        background-position: left bottom;
+    }
+
+    75% {
+        background-position: right top;
+    }
+}
+
+span {
+    color: var(--two-color);
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+
+}
+
+
+div>img {
+
+    height: 200px;
+    object-fit: cover;
+}
+
+
+main .search {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .search .searchInput {
+    background-color: var(--second-bg-color);
+    border: 1px solid var(--two-color);
+    height: 43px;
+    width: 343px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+}
+
+main .search .searchInput i {
+    margin-right: 15px;
+}
+
+main .search .searchInput input {
+    background-color: transparent;
+    color: var(--text-color);
+    border: none;
+    height: 35px;
+    width: 100%;
+}
+
+main .search select {
+    width: 207px;
+
+    background-color: var(--second-bg-color);
+
+    box-shadow: 1px 1px 15px var(--second-color);
+    color: var(--text-color);
+    border: none;
+    padding: 13px;
+    border-radius: 5px;
+}
+
+main #country {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+
+}
+
+main #country>.card {
+    width: 20%;
+    background-color: transparent;
+    border: 1px solid var(--two-color);
+    border-radius: 5px;
+    min-width: 240px;
+    margin-bottom: 40px;
+    margin-right: 46px;
+    padding: 0 1rem;
+
+}
+
+main #country .card>.img {
+    width: 100%;
+    height: 200px;
+
+
+
+
+}
+
+main #country .card>.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 3rem;
+    box-shadow: 1px 3px 35px black;
+
+
+}
+
+main #country .card>.info {
+    padding-left: 20px;
+    padding-top: 60px;
+
+}
+
+main #country .card>.info p span {
+    font-weight: bold;
+
+}
+
+
+main .back {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    width: 95px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid var(--two-color);
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+main .back i {
+    margin-right: 6px;
+}
+
+
+
+main .countryInfo>.info {
+    width: 50%;
+    padding: 10%;
+}
+
+main .countryInfo>.info .infoList {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 14px;
+
+}
+
+
+
+main .countryInfo>.info .infoList p {
+    margin-bottom: 5px;
+
+
+}
+
+main .countryInfo>.info .infoList p span {
+    font-weight: bold;
+}
+
+main .countryInfo>.info .countryTag {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main .countryInfo>.info .countryTag .miniCountryList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main .countryInfo>.info .countryTag .miniCountryList .mini {
+    background-color: #e2e6e9;
+    margin: 0 6px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+footer {
+
+    text-align: center;
+}
+
+footer a {
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+.loader {
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid var(--two-color);
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+
+
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+@media only screen and (max-width: 660px) {
+
+
+    main .search {
+        flex-direction: column;
+        height: 100px;
+    }
+
+    div>img {
+
+        height: 200px;
+        object-fit: cover;
+    }
+
+
+    main .countryInfo>.info {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: var(--h2-font);
+    }
+
+
+}

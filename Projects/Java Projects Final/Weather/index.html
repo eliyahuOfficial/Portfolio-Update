@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Citys Weather</title>
+    <link rel="icon" type="image/x-icon" href="./img/eliyahu-faicon.png" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/595a890311.js" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<!------Eliyahu Levi - Java Project---->
+
+<body>
+
+    <!----------General Body Page---------->
+    <section>
+        <div class="home-text">
+
+            <h1>Citys <span>Weather</span></h1>
+
+            <h3>Everything you need for your day trip. <span>Your One-Stop </span> </h3>
+
+
+        </div>
+
+    </section>
+
+    <!--------------Weather---------------->
+    <section>
+        <div class="weat_row">
+            <form class="form_col" id="search-form">
+                <input type="text" id="search-input" aria-describedby="searchCity" placeholder="Search city..."
+                    class="search-form" autocomplete="on" />
+                <input class="weat_btn" type="submit" value="Search"></input>
+            </form>
+
+        </div>
+        <span class="measurements">
+            <h3 id="searched-city">
+                Your City
+            </h3>
+            <a href="#" id="celcius-link">C°</a> |
+            <a href="#" id="fahrenheit-link">F°</a>
+        </span>
+
+
+    </section>
+
+    <section class="info_weat_new">
+        <div id="weather-icon" class="icons_weat"></div>
+
+        <div>
+            <h3 id="current-temperature">18°</h3>
+            <p id="current-time">11:00</p>
+            <h2 id="current-day">Today</h2>
+            <p id="weather-type">Cloudy</p>
+            <ul>
+                <li>Humidity: <span id="humidity"></span> </li>
+                <li>Wind: <span id="wind"></span> </li>
+            </ul>
+        </div>
+
+
+
+    </section>
+    <section>
+
+        <div>
+            <div class="container_week_weat">
+                <h1>Weekly Weather</h1>
+                <div id="weekly-forecast" class="forecast-container">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!----------------End------------------->
+
+    <section class="end">
+        <div class="last-text">
+            <p>
+                Copyright © 2024 Eliyahu Levi. All Rights Reserved.
+            </p>
+        </div>
+        <div class="top">
+            <a href="#"><img src="./img/up-arrow-alt.png" alt="Arrow up"></a>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
