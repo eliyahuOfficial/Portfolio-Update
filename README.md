@@ -117,7 +117,7 @@ This project is a basic calculator implemented in JavaScript using HTML and CSS,
 
 ------------------
 
-Calculator - Html Css Java Script
+Clock - Html Css Java Script
 This project creates an analog clock using HTML, CSS, and JavaScript to dynamically update the clock hands' positions based on the current time.
 
 ------------------
